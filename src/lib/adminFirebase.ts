@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Administrative API Configuration (Separated for Staff/Admin)
 const adminFirebaseConfig = {
-    apiKey: "AIzaSyC1n4LNJy90vO-_83u5b2UaaIE_VRgva0A",
-    authDomain: "airline-admin.firebaseapp.com",
-    projectId: "airline-admin",
-    storageBucket: "airline-admin.firebasestorage.app",
-    messagingSenderId: "768888585724",
-    appId: "1:768888585724:web:b86bd7eef04a4ce112c679",
-    measurementId: "G-1SJBPC5G7D"
+    apiKey: import.meta.env.VITE_ADMIN_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_ADMIN_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_ADMIN_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_ADMIN_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_ADMIN_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_ADMIN_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_ADMIN_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize secondary instance
